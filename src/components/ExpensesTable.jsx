@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 class ExpensesTable extends React.Component {
   render() {
-    const { expenses } = this.props;
     const titles = [
       'Descrição',
       'Tag',
