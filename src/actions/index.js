@@ -1,6 +1,7 @@
 export const SET_EMAIL = 'SET_EMAIL';
 export const SET_CURRENCIES = 'SET_CURRENCIES';
 export const SET_EXPENSES = 'SET_EXPENSES';
+export const DELETE_EXPENSE = 'DELETE_EXPENSE';
 
 export function setEmail(email) {
   return {
@@ -45,3 +46,10 @@ export const fetchExpenses = (expense) => async (dispatch) => {
     console.log(error);
   }
 };
+
+export function deleteExpense(expense) {
+  return {
+    type: DELETE_EXPENSE,
+    payload: expense,
+  };
+}
